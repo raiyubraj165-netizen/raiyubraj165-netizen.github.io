@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yubraj Rai | Portfolio</title>
+<meta name="description" content="Yubraj Rai - BEIT student at Cosmos College of Management and Technology, learning Python and exploring blockchain.">
+<style>
+  :root {
+    --bg: #f7f8fa;
+    --card: #ffffff;
+    --text: #1b1f27;
+    --muted: #5b6472;
+    --accent: #2f6fed;
+    --border: #e3e6ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1218;
+      --card: #171b23;
+      --text: #e9ecf2;
+      --muted: #9aa4b5;
+      --accent: #6c9bff;
+      --border: #272d38;
+    }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 20px; }
+
+  nav { border-bottom: 1px solid var(--border); background: var(--card); position: sticky; top: 0; z-index: 10; }
+  nav .wrap { display: flex; justify-content: space-between; align-items: center; height: 56px; }
+  nav .logo { font-weight: 700; color: var(--text); }
+  nav ul { display: flex; gap: 18px; list-style: none; font-size: 0.95rem; }
+
+  header.hero { padding: 72px 0 56px; }
+  .hero .hi { color: var(--accent); font-weight: 600; margin-bottom: 8px; }
+  .hero h1 { font-size: clamp(2rem, 6vw, 3.2rem); line-height: 1.15; margin-bottom: 14px; }
+  .hero p { color: var(--muted); max-width: 560px; font-size: 1.08rem; }
+  .btns { margin-top: 26px; display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block; padding: 10px 20px; border-radius: 8px;
+    font-weight: 600; border: 1px solid var(--accent);
+  }
+  .btn.primary { background: var(--accent); color: #fff; }
+  .btn.primary:hover { text-decoration: none; opacity: 0.9; }
+  .btn.ghost:hover { text-decoration: none; background: var(--card); }
+
+  section { padding: 44px 0; }
+  section h2 { font-size: 1.5rem; margin-bottom: 20px; }
+  section h2::after {
+    content: ""; display: block; width: 44px; height: 3px;
+    background: var(--accent); margin-top: 8px; border-radius: 2px;
+  }
+
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px;
+  }
+  .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .card h3 { font-size: 1.05rem; margin-bottom: 6px; }
+  .card p { color: var(--muted); font-size: 0.95rem; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .tag {
+    font-size: 0.82rem; padding: 4px 10px; border-radius: 999px;
+    border: 1px solid var(--border); color: var(--muted); background: var(--bg);
+  }
+  .soon { opacity: 0.85; border-style: dashed; }
+
+  footer { border-top: 1px solid var(--border); padding: 28px 0; margin-top: 30px; color: var(--muted); font-size: 0.9rem; text-align: center; }
+
+  @media (max-width: 520px) {
+    nav ul { gap: 12px; font-size: 0.88rem; }
+    header.hero { padding: 48px 0 36px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">Yubraj Rai</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="hi">Hello, I'm</p>
+    <h1>Yubraj Rai</h1>
+    <p>BEIT (Information Technology Engineering) student, learning to code and building my way toward a career in tech.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">View my work</a>
+      <a class="btn ghost" href="#contact">Contact me</a>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am a BEIT student at <strong>Cosmos College of Management and Technology</strong>.
+        I know the basics of Python, HTML, CSS, JavaScript and MySQL, and I am building a strong foundation in programming.
+        I am also interested in blockchain and want to explore it as a future field.
+        I believe in learning a little every day and building real projects.
+      </p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills &amp; Learning</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Python</h3>
+        <p>Basic knowledge: loops, control flow, functions and more.</p>
+        <div class="tags"><span class="tag">Basic</span></div>
+      </div>
+      <div class="card">
+        <h3>HTML &amp; CSS</h3>
+        <p>Can build and style simple web pages.</p>
+        <div class="tags"><span class="tag">Basic</span></div>
+      </div>
+      <div class="card">
+        <h3>JavaScript</h3>
+        <p>Basic knowledge of making web pages interactive.</p>
+        <div class="tags"><span class="tag">Basic</span></div>
+      </div>
+      <div class="card">
+        <h3>MySQL</h3>
+        <p>Basic knowledge of databases and SQL queries.</p>
+        <div class="tags"><span class="tag">Basic</span></div>
+      </div>
+      <div class="card">
+        <h3>Git &amp; GitHub</h3>
+        <p>Learning to save, track and share my code online.</p>
+        <div class="tags"><span class="tag">Learning</span></div>
+      </div>
+      <div class="card">
+        <h3>Blockchain</h3>
+        <p>Interested in this field and planning to explore it in the coming years.</p>
+        <div class="tags"><span class="tag">Interest</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <div class="card soon">
+        <h3>Python Practice</h3>
+        <p>My beginner Python exercises and small programs. Coming soon.</p>
+        <div class="tags"><span class="tag">Python</span></div>
+      </div>
+      <div class="card soon">
+        <h3>More projects</h3>
+        <p>New projects will be added here as I learn and build.</p>
+        <div class="tags"><span class="tag">Coming soon</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Want to connect or work together? Reach out:</p>
+      <p style="margin-top:10px;">
+        Email: <a href="mailto:raiyubraj165@gmail.com">raiyubraj165@gmail.com</a>
+      </p>
+      <p>
+        Phone: <a href="tel:9762378254">976-2378254</a>
+      </p>
+      <p>
+        WhatsApp: <a href="https://wa.me/9779762378254" target="_blank" rel="noopener">976-2378254</a>
+      </p>
+      <!-- After creating your GitHub account, replace raiyubraj165-netizen below -->
+      <p>
+        GitHub: <a href="https://github.com/raiyubraj165-netizen" target="_blank" rel="noopener">github.com/raiyubraj165-netizen</a>
+      </p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Yubraj Rai. Built with HTML &amp; CSS.</div>
+</footer>
+
+</body>
+</html>
